@@ -4,6 +4,7 @@ import { cors } from 'hono/cors'
 import { logger } from 'hono/logger'
 import { getDb, todos } from "@repo/db";
 import { eq } from 'drizzle-orm'
+
 const app = new Hono().basePath("/api")
 app.use('*', logger())
 

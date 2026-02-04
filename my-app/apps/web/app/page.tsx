@@ -8,7 +8,7 @@ export default function DashboardPage() {
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center space-y-6">
 
-        {/* Title */}
+       
         <h1 className="text-4xl font-bold">
           Work Track
         </h1>
