@@ -42,7 +42,7 @@ const bigChartConfig = {
   value: { label: "Tasks", color: "var(--chart-2)" },
 } satisfies ChartConfig
 
-export function ChartBar() {
+export function Chartbar() {
 
   const { data: items = [] } = useQuery({
     queryKey: ["todos"],
