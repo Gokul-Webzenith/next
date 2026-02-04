@@ -1,0 +1,26 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --tsconfig tsconfig.json --external drizzle-orm"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.1",
+    "pg": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.16.0"
+  }
+}
