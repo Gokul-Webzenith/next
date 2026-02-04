@@ -14,7 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --tsconfig tsconfig.json --external drizzle-orm"
+    "build": "pnpm dlx tsup src/index.ts --format esm --dts --tsconfig tsconfig.json --external drizzle-orm"
+
   },
   "dependencies": {
     "drizzle-orm": "^0.45.1",
